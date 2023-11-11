@@ -9,6 +9,9 @@
             margin: 0;
             padding: 0;
         }
+        img{
+
+        }
         section:nth-of-type(1) {
             width: 100%;
             height: 100vh;
@@ -19,7 +22,7 @@
             /* clip-path: polygon(0 0,100% 0,100% 70%,50% 100%,0 70%); */
             position: relative;
             z-index: 10;
-            background-image:url('https://picsum.photos/id/65/1600/900');
+            background-image:url('../img/002.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -28,7 +31,7 @@
         section:nth-of-type(2) {
             width: 100%;
             /* height: 500px; */
-            background-color: #098;
+            background-color: rgb(14, 100, 33);
             margin-top: -15vw;
             padding-top: 25vw;
             padding-bottom: 25vw;
@@ -44,12 +47,24 @@
             margin-top: -15vw;
             padding-top: 20vw;
             padding-bottom: 20vw;
-            background-image:url('https://picsum.photos/id/35/1600/900');
+            background-image:url('../img/001.png');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
             background-attachment: fixed;
             clip-path: polygon(0 0,100% 0,100% calc(100% - 15vw),0 100%);
+            z-index: 8;
+        }
+        section:nth-of-type(4) {
+            width: 100%;
+            /* height: 500px; */
+            background-color: rgb(33, 126, 40);
+            margin-top: -15vw;
+            padding-top: 25vw;
+            padding-bottom: 25vw;
+            clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 15vw));
+            position: relative;
+            z-index: 7;
         }
         .container {
             display: flex;
@@ -66,6 +81,15 @@
             padding: 30px;
             border-radius: 5px;
             background-color: rgb(255 255 255 / .3);
+        }
+        .right{
+            width: 50%;
+            padding: 30px;
+            border-radius: 5px;
+            background-color: rgb(255 255 255 / .3);
+            position: absolute;
+            top: 550px;
+
         }
         footer {
             background-color: #222;
@@ -108,39 +132,67 @@
 </head>
 <body>
     <nav>
-        <a href="#">link</a>
-        <a href="#">link</a>
-        <a href="#">link</a>
+        <a href="#">首頁</a>
+        <a href="#">人物介紹</a>
+        <a href="#">最新消息</a>
+        <a href="#">聯絡我們</a>
     </nav>
-    <section></section>
     <section>
         <div class="container">
-            <div class="col">
-                <h2>title</h2>
+            <div class="right">
+                <h2>嘉康利博士</h2>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque officia, sunt eaque repellat aliquid distinctio molestiae at obcaecati quisquam sed fuga voluptates, ullam quas aspernatur unde voluptatem nulla reiciendis dolore?
-                </p>
-            </div>
-            <div class="col">
-                <h2>title</h2>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque officia, sunt eaque repellat aliquid distinctio molestiae at obcaecati quisquam sed fuga voluptates, ullam quas aspernatur unde voluptatem nulla reiciendis dolore?
-                </p>
-            </div>
-            <div class="col">
-                <h2>title</h2>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque officia, sunt eaque repellat aliquid distinctio molestiae at obcaecati quisquam sed fuga voluptates, ullam quas aspernatur unde voluptatem nulla reiciendis dolore?
+                    “我们所研制的产品对地球温和，同时我们不进行任何动物测试。 我绝不会制造任何会伤害人体细胞组织的产品。”
                 </p>
             </div>
         </div>
     </section>
     <section>
         <div class="container">
-            <div class="left">
-                <h2>title</h2>
+            <div class="col">
+                <h2>100年创新</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae possimus perferendis vero aliquid assumenda, velit vel harum minus ab unde voluptatibus tenetur numquam asperiores aut architecto rerum inventore corrupti commodi?
+                    嘉康利 (Forrest C. Shaklee) 博士致力于帮助他人过上更健康的生活。他在100多年前于美国研发了第一种多种综合维生素。秉持着嘉康利博士创新和科研为主的遗念，我们在所有的事情中，都会以他与大自然和谐共存的哲理作为核心价值。 经科学认证的营养及美容产品，再加上绿色环保因素，我们成功帮助上百万人营造更健康、更年轻、更充实的人生。我们可以证明这一点。
+                </p>
+            </div>
+            <div class="col">
+                <h2>嘉康利与众不同之处</h2>
+                <p>
+                    秉持着嘉康利 (Forrest C. Shaklee) 博士创新和科研为主的遗念，我们在所有的事情中，都会以他与大自然和谐共存的哲理作为核心价值。
+                </p>
+            </div>
+            
+        </div>
+    </section>
+    
+    <section>
+        <div class="container">
+            <div class="left">
+                <h2>Forrest C. Shaklee</h2>
+                <p>
+                    “ 我们的使命是为每个人提供更健康的生活及更美好的人生。 
+                </p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="col">
+                <h2>100年光輝成就</h2>
+                <p>
+                    研發出第一瓶綜合維生素營養補充品。
+                </p>
+            </div>
+            <div class="col">
+                <h2>VIVIX</h2>
+                <p>
+                    與哈佛大學醫學院科學家共同研究的馬斯卡丁葡萄萃取營養液VIVIX推出市場，富含多種植物多酚效果更勝單一配方，開啟青春永駐的嶄新局面。
+                </p>
+            </div>
+            <div class="col">
+                <h2>運動團隊</h2>
+                <p>
+                    運動團隊在俄羅斯冬奧會贏得多項獎牌。更多相關資訊:  嘉康利卓越運動選手
                 </p>
             </div>
         </div>
